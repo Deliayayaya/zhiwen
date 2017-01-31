@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src='jquery-ui-1.11.4.custom/external/jquery/jquery.js'></script>
+<script type="text/javascript" src='jquery-ui-1.11.4.custom/jquery-ui.js'></script>
+
+<script type="text/javascript" src='js/jquery-form.js'></script>
+<script type='text/javascript' src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src='js/jquery.validate.js'></script>
+<script type="text/javascript" src='js/index.js'></script>
+<link rel="stylesheet" type="text/css" href='jquery-ui-1.11.4.custom/jquery-ui.css'/>
+<link rel="stylesheet" type="text/css" href='css/style.css'/>
+<title>知问</title>
+</head>
+
+<body>
+<div class='header' id='header1'>
+    <div class='header_main'>
+        <font>知问</font>
+        <input class='header_search' type='text' />
+    </div>
+    <div class="header_button">
+        <button id="button_search">搜索</button>
+        <button id="button_question">提问</button>
+    </div>
+    <div class="header_member">
+        <a id='reg_a' href="javascript:void(0)">注册</a>
+        <a id='member' href="javascript:void(0)">用户</a> 
+        |
+        <a id='login_a' href="javascript:void(0)">登录</a>
+        <a id='regout' href="javascript:void(0)">退出</a>
+	</div>
+</div>
+
+<div id='main'>
+	<div id='main_left'>
+		<div id="tabs">
+     		<ul>
+                <li><a href='tab1.html'>最热门的提问</a></li>
+                <li><a href='tab2.html'>推荐的提问</a></li>
+                <li><a href='tab3.html'>评论最多的提问</a></li>
+     		</ul>
+    	</div>
+    	<div id='content'></div>
+	</div>
+	<div id='main_right'>
+		<div id='accordion'>
+            <h3>我关注的人</h3>
+            <div><p>内容1</p></div>
+            <h3>关注我的人</h3>
+            <div>内容2</div>
+            <h3>我的提问列表</h3>
+            <div>内容3</div>
+    	</div>
+	</div>
+</div>
+
+<form action='add.php' mothed='post' title="会员注册" id='reg' >
+	<ol class='reg_error'></ol>
+	<p>
+        <label for='user' title='zhanghao'>账号：</label>
+        <input class='text' id='user' name='user' type='text'  />
+  		<span class="spa">*</span>
+	</p>
+	<p>
+        <label for='text' >密码：</label>
+        <input class='text' id='password' name='pass' type='password' />
+        <span class="spa">*</span>
+	</p>
+    <p>
+        <label for='text'>邮箱：</label>
+        <input class='text' id='email' name='email' type='text' />
+        <span class="spa">*</span>
+    </p>
+    <p>
+        <label>性别：</label>
+        <input type='radio' id='male' value='male' name='sex' checked="checked"><label for='male'>男</label></input>
+        <input type='radio'  id='female' value='female' name='sex'><label for='female'>女</label></input>
+    </p>
+	<p>
+        <label for='birthday'>生日：</label>
+        <input type='text' class='text' id='birth' readonly="readonly"></input>
+	</p>
+</form>
+
+<form title="会员登录" id='login'>
+	<ol class='login_error'></ol>
+    <p>
+        <label for='login' >账号：</label>
+        <input class='text' id='login_user' name='login_user' type='text'  />
+        <span class="spa">*</span>
+    </p>
+	<p>
+        <label for='text' >密码：</label>
+        <input class='text' id='login_pass' name='login_pass' type='password' />
+        <span class="spa">*</span>
+		<p>
+            <input type='checkbox' id='expires' name='expires' />
+            <label for='expires'>有效期为一个月</label>
+		</p>
+ 	</p>
+</form>
+
+<form id='question' title='提问'>
+    <p>
+    <label for='title'>问题名称：</label>
+    <input class='text' id='title' name='title' style='width:390px' type='text'>
+    </p>
+	<textarea id='content' name='content' >请输入问题描述！</textarea>
+</form>
+<div id="loading">数据交互中</div>
+<div id="error"></div>
+
+</body>
+</html>

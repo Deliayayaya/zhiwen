@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0 0 0 0;
+	}	
+#header1{
+	background:url(../img/header2.png);
+	height:44px;
+	}
+.header_main{
+    width:550px;
+	height:40px;
+	float:left;
+	margin-left:200px;
+	}
+.header_main font{
+	font-size:20px;
+	font-family:宋体;
+	line-height:40px;
+	margin-left:50px;
+	}
+.header_main .header_search{
+    width:440px;
+	height:24px;
+	line-height:24px;
+	margin-left:10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	}		
+.header .header_button{	
+	float:left;
+	height:40px;
+	line-height:40px;
+	}
+.header .header_button button{
+	height:28px;
+	line-height:14px;
+	margin-top:8px;
+	text-align:center;
+	font-size:12px;
+	}
+.header .header_member{
+	width:150px;
+	float:right;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	margin-right:40px;
+	}
+.header .header_member a{
+	text-decoration:none;
+	}
+#reg p label,#login p label,#question p label{
+	font-size:13px;
+	}
+#reg p .text,#login p .text,#question p text{
+	width:200px;
+	height:25px;
+	line-height:25px;
+	background-color:#FFF;
+	border:1px solid #CCC;
+	border-radius:4px;
+	margin-left:2px;
+	font-size:13px;
+	}
+#reg p .spa,#login p .spa,#question p .spa{
+    color:brown;
+	font-size:14px;
+	}
+#male label{
+font-size:45px;
+	}
+#reg p .ui-datepicker-trigger{
+	height:25px;
+	float:right;
+	margin-right:8px;
+	}
+#reg ol,#login ol{
+	margin:0 0 0 20px;
+	color:brown;
+	}
+.succ{/*给每个input书写正确后添加的类选择器*/
+	background:url(../img/succ2.png) no-repeat;
+	width:26px;
+	height:20px;
+	display:inline-block;
+	}
+#loading{
+	background:url(../img/loading.gif) no-repeat 20px center;
+    line-height:20px;
+	font-weight:bold;
+	font-size:14px;
+	text-indent:30px;
+	}
+#error{
+	background:url(../img/error.png) no-repeat 20px center;
+    line-height:20px;
+	font-weight:bold;
+	font-size:12px;
+	text-indent:30px;
+	}
+#expires{
+	position:relative;
+	top:2px;
+	margin:0 0 0 140px;	
+	}
+#main{
+	width:800px;
+	margin:0 auto;
+	margin-top:10px;
+	}
+#main_left{
+	width:580px;
+	float:left;
+	}
+#main_right{
+	width:214px;
+	float:right;
+	}
+#button_question{
+	margin-bottom:6px;
+	}
+#button_search{
+	margin-bottom:6px;
+	}
+#content{
+	width:500px;
+	height:200px;
+	}
+#tabs{
+	margin:0px;
+	border:none;
+	}
+#ui-id-7,#ui-id-9,#ui-id-11{
+	border:1px solid #CCC;
+	border-top:none;
+	position:relative;
+	top:-2px;
+	}
+#accordion{
+	margin:0px;
+	}
+#content h4{
+	color:#333;
+	font-weight:normal;
+	}
+#content h3{
+	color:#369;
+	}
+#content .editor{
+	color:#333;
+	line-hight:180%;
+	/*overflow:hidden;*/
+	}
+#content .bottom{
+	padding:5px 0 0 0 ;
+	}
+#content .down{
+	float:right;
+	color:#369;
+	cursor:pointer;
+	}
+#content .up{
+    color:#369;
+	cursor:pointer;
+	}
+.bottom .comment{
+	color:#369;
+	cursor:pointer;
+	}
+.comment_list{
+	border-radius:4px;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	display:none;
+	}
+.comment_list dl{
+	margin:0;
+	padding:3px 0 5px 0;
+	}
+.comment_list dl dt{
+	margin:0;
+	padding:5px 0 0 0;
+	color:#369;
+	}
+.comment_list dl dd{
+	margin:0;
+	color:#333;
+	line-height:180%;
+	}
+.comment_list dl dd.comment_date{
+	color:#666;
+	/*border-bottom:1px solid #ccc;*/
+	}
+.comment_list dl.comment_add{
+	text-align:right;
+	}	
+.comment_list dl.comment_content{
+	border-bottom:1px solid #ccc;
+	}
+.comment_list dl dt textarea{
+	width:98%;
+	border:1px solid #ccc;
+	border-radius:4px;
+	resize:none;
+	padding:5px;
+	font-size:12px;
+	color:#666;
+	margin:0 0 5px 0;
+	}
+.comment_list dl dt.comment_button{
+
+	}
+.comment_list dl dd.comment_load{
+	background:url(../img/comment_load.gif) no-repeat 85px;
+	}
+#footer{
+clear:both;
+text-align:center;
+color:#999;
+	}
